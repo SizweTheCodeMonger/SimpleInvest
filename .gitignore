@@ -1,57 +1,81 @@
-lib-cov
-*.seed
+# OS
+# ===========
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node and related ecosystem
+# ==========================
+.nodemonignore
+.sass-cache/
+node_modules/
+public/lib/
+app/tests/coverage/
+.bower-*/
+.idea/
+coverage/
+.coveralls.yml
+
+# MEAN.js app and assets
+# ======================
+public/dist/
+uploads
+modules/users/client/img/profile/uploads
+config/env/local.js
+config/env/local-*.js
+*.pem
+
+# Compiled less and sass files
+# ============================
+modules/*/client/scss/*.css
+modules/*/client/less/*.css
+
+# Ignoring MEAN.JS's gh-pages branch for documenation
+_site/
+
+# General
+# =======
 *.log
 *.csv
 *.dat
 *.out
 *.pid
 *.gz
+*.tmp
+*.bak
 *.swp
+logs/
+build/
 
-pids
-logs
-results
-tmp
+# Sublime editor
+# ==============
+.sublime-project
+*.sublime-project
+*.sublime-workspace
 
-# Optional npm cache directory
-.npm
+# Eclipse project files
+# =====================
+.project
+.settings/
+.*.md.html
+.metadata
+*~.nib
+local.properties
 
-#Build
-public/css/main.css
-.nyc_output/*
-
-#Libraries from npm packages
-public/js/lib/bootstrap.min*
-public/js/lib/jquery.min*
-public/js/lib/popper.min*
-
-# API keys and secrets
-.env
-
-# Dependency directory
-node_modules
-bower_components
-
-# Editors
-.idea
-.vscode
+# IntelliJ
+# ========
 *.iml
-modules.xml
-*.ipr
 
-# Folder config file
-Desktop.ini
+# Cloud9 IDE
+# =========
+.c9/
+data/
+mongod
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# OS metadata
-.DS_Store
-Thumbs.db
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
+# Visual Studio
+# =========
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
