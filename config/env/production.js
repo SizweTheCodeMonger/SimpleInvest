@@ -11,7 +11,7 @@ module.exports = {
   },
   port: process.env.PORT || 8443,
   // Binding to 127.0.0.1 is safer in production.
-  host: process.env.HOST || '0.0.0.0',
+  host: process.env.HOST || 'https://simplinvest.azurewebsites.net',
   db: {
     uri: process.env.MONGOHQ_URL || process.env.MONGODB_URI || 'mongodb://sizwe:Dc6xmEAyTcegJLYIRoePqsrcQOhEy81N3hSTgAfJymaaKuNsz5fxaFRr7rKWotfHdh2MBsEFDi9nrMuomwfaPg==@sizwe.documents.azure.com:10250/mean?ssl=true' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
     options: {
@@ -107,13 +107,4 @@ module.exports = {
     }]
   }
 };
-  {
-    "name": "WEBSITE_NODE_DEFAULT_VERSION",
-    "slotSetting": false,
-    "value": "6.9.5"
-  },
-  {
-    "name": "MONGODB_URI",
-    "slotSetting": false,
-    "value": "mongodb://sizwe:Dc6xmEAyTcegJLYIRoePqsrcQOhEy81N3hSTgAfJymaaKuNsz5fxaFRr7rKWotfHdh2MBsEFDi9nrMuomwfaPg==@sizwe.documents.azure.com:10250/mean?ssl=true"
-  }
+  
